@@ -1,5 +1,5 @@
 {
-  "name": "AOG4Clever",
+  "name": "BotHook",
   "version": "1.0.0",
   "description": "Let's deploy on clever cloud your Google Assistant",
   "main": "src/index.js",
