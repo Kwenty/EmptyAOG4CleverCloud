@@ -10,9 +10,7 @@ exports.welcomeIntent = function (conv) {
 exports.byeIntent = function (conv) {
     conv.ask(constants_1.messages.goodbye);
 };
-exports.championShipWinnerIntent = function (conv, params) {
-    console.log(params);
-    conv.ask("test");
-    // conv.ask(championshipWinners[params.category][params.year]);
+exports.championshipWinnerIntent = function (conv, params) {
+    conv.ask(constants_1.championshipWinners[params.category][params.startDate.slice(0, 4)]);
 };
 //# sourceMappingURL=base.intent.js.map

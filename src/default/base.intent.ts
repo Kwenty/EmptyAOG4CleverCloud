@@ -16,8 +16,6 @@ export const byeIntent = (conv: DialogflowConversation) => {
     conv.ask(messages.goodbye);
 }
 
-export const championShipWinnerIntent = (conv: DialogflowConversation, params) => {
-    console.log(params);
-    conv.ask("test");
-    // conv.ask(championshipWinners[params.category][params.year]);
+export const championshipWinnerIntent = (conv: DialogflowConversation, params) => {
+    conv.ask(championshipWinners[params.category][params.startDate.slice(0,4)]);
 }

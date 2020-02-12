@@ -7,7 +7,8 @@ import {
 import {
   helpIntent,
   welcomeIntent,
-  byeIntent, championShipWinnerIntent
+  byeIntent,
+  championshipWinnerIntent
 } from './default/base.intent';
 
 const express = require('express');
@@ -25,6 +26,6 @@ app.intent('Goodbye', byeIntent)
 
 app.intent('Help', helpIntent)
 
-app.intent('ChampionshipWinner', championShipWinnerIntent)
+app.intent('ChampionshipWinner', championshipWinnerIntent)
 
 express().use(bodyParser.json(), app).listen(8080);

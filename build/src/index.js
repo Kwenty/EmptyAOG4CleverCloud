@@ -12,6 +12,6 @@ app.intent('Default Welcome Intent', base_intent_1.welcomeIntent);
 // Intent in Dialogflow called `Goodbye`
 app.intent('Goodbye', base_intent_1.byeIntent);
 app.intent('Help', base_intent_1.helpIntent);
-app.intent('ChampionshipWinner', base_intent_1.championShipWinnerIntent);
+app.intent('ChampionshipWinner', base_intent_1.championshipWinnerIntent);
 express().use(bodyParser.json(), app).listen(8080);
 //# sourceMappingURL=index.js.map
