@@ -1,11 +1,11 @@
-
-export const messages = {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.messages = {
     welcome: "Bonjour, et bienvenue dans votre bot AOG. Comment puis je vous aider?",
     goodbye: "A bientôt!",
     help: "Je peux faire XXX pour vous!",
-}
-
-export const championshipWinners = {
+};
+exports.championshipWinners = {
     MotoGP: {
         2019: "Marc Marquez avec 420 points",
         2018: "Marc Marquez avec 321 points",
@@ -27,13 +27,8 @@ export const championshipWinners = {
         2016: "Brad Binder avec 319 points",
         2015: "Danny avec 260 points",
     },
-    '500cc': {
-
-    },
-    '250cc': {
-
-    },
-    '125cc': {
-
-    }
-}
+    '500cc': {},
+    '250cc': {},
+    '125cc': {}
+};
+//# sourceMappingURL=constants.js.map

@@ -4,10 +4,10 @@ import {
   DialogflowConversation
 } from 'actions-on-google'
 
-import { 
+import {
   helpIntent,
   welcomeIntent,
-  byeIntent
+  byeIntent, championShipWinnerIntent
 } from './default/base.intent';
 
 const express = require('express');
@@ -25,5 +25,6 @@ app.intent('Goodbye', byeIntent)
 
 app.intent('Help', helpIntent)
 
+app.intent('ChampionshipWinner', championShipWinnerIntent)
 
 express().use(bodyParser.json(), app).listen(8080);
