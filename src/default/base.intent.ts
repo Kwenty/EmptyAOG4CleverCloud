@@ -17,5 +17,5 @@ export const byeIntent = (conv: DialogflowConversation) => {
 }
 
 export const championshipWinnerIntent = (conv: DialogflowConversation, params) => {
-    conv.ask(championshipWinners[params.category][params.startDate.slice(0,4)]);
+    conv.ask(championshipWinners[params.category][params.year.startDate.slice(0,4)]);
 }
