@@ -11,7 +11,7 @@ exports.byeIntent = function (conv) {
     conv.ask(constants_1.messages.goodbye);
 };
 exports.championshipWinnerIntent = function (conv, params) {
-    console.log(params.year);
-    conv.ask(constants_1.championshipWinners[params.category][params.year.startDate.slice(0, 4)]);
+    console.log(params.year.endDate);
+    conv.ask(constants_1.championshipWinners[params.category][params.year.endDate.slice(0, 4)]);
 };
 //# sourceMappingURL=base.intent.js.map
