@@ -1,7 +1,7 @@
 import {
     DialogflowConversation
   } from 'actions-on-google'
-import { messages } from '../constants';
+import {championshipWinners, messages} from '../constants';
 
 export const helpIntent = (conv: DialogflowConversation) => {
     conv.ask(messages.help);
@@ -16,5 +16,5 @@ export const byeIntent = (conv: DialogflowConversation) => {
 }
 
 export const championShipWinnerIntent = (conv: DialogflowConversation, params) => {
-    conv.ask(messages[params.category][params.year]);
+    conv.ask(championshipWinners[params.category][params.year]);
 }
